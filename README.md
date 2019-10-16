@@ -4,7 +4,8 @@
 
 1. Build/run containers with detached mode
    a. `docker-compose up -d`
-   b. `composer install` (Prepare Symfony app and follow default wizard default input just enter)
+   b. `docker-compose ps` (to check installed containers)
+   c. `composer install` (Prepare Symfony app and follow default wizard default input just enter)
 
 2. For going to docker container (just we need php container)
    `docker-compose exec php bash` (In my case I needed to add `winpty docker-compose exec php bash`)
