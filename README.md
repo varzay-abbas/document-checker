@@ -3,16 +3,19 @@
 
 
 1. Build/run containers with detached mode
-   `docker-compose up -d`
+   a. `docker-compose up -d`
+   b. `composer install` (Prepare Symfony app and follow default wizard default input just enter)
 
-2. Prepare Symfony app
+2. For going to docker container (just we need php container)
    `docker-compose exec php bash` (In my case I needed to add `winpty docker-compose exec php bash`)
-   You should be in the container: /var/www/symfony
-   `composer install`
-        
-*  Within container-> /var/www/symfony : `cat input.csv` (To see input)
-*  Within container-> /var/www/symfony : `php bin/console identification-request:process input.csv` (For running command console with argument)
-*  Within container-> /var/www/symfony : `php phpunit.phar` (For unit testing)
+           
+    *  Within container-> /var/www/symfony : `cat input.csv` (To see input)
+    *  Within container-> /var/www/symfony : 
+    `php bin/console identification-request:process input.csv` (For running command console with argument)
+    *  Within container-> /var/www/symfony : `php phpunit.phar` (For unit testing)
+
+## Sample Output
+![Figure 1-2](Sample-Output.png "Figure 1")
 
 
 ## How it works?
