@@ -1,5 +1,5 @@
 
-## Installation (In my case I use php 7.1)
+## Installation (In my case I used php 7.1)
 
 
 1. Build/run containers with detached mode
