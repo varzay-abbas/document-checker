@@ -9,7 +9,7 @@
 
 2. For going to docker container (just we need php container)
     * `docker-compose exec php bash` (In my case I needed to add `winpty docker-compose exec php bash`)
-           
+    *  Within container-> /var/www/symfony : `composer update` (To confirm phpunit install)   
     *  Within container-> /var/www/symfony : `cat input.csv` (To see input)
     *  Within container-> /var/www/symfony : 
     `php bin/console identification-request:process input.csv` (For running command console with argument)
