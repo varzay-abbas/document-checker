@@ -1,3 +1,8 @@
+identification_request:
+    resource: "@IdentificationRequestBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
