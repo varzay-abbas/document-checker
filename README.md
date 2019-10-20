@@ -13,7 +13,7 @@
     *  Within container-> /var/www/symfony : `cat input.csv` (To see input)
     *  Within container-> /var/www/symfony : 
     `php bin/console identification-request:process input.csv` (For running command console with argument)
-    *  Within container-> /var/www/symfony : `php phpunit.phar` (For unit testing)
+    *  Within container-> /var/www/symfony : `php phpunit.phar` (For unit testing) or `./vendor/bin/phpunit`  
 
 ## Sample Output
 ![Figure 1-2](Sample-Output.png "Figure 1")
